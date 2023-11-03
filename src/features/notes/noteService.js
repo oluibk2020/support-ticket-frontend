@@ -1,6 +1,6 @@
 import axios from "axios";
-
-const API_URL = "/api/tickets/";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API_URL = BACKEND_URL + "/api/tickets/"
 
 //get all user notes for a ticket
 const getNotes = async (ticketId, token) => {
